@@ -1,0 +1,89 @@
+= Social Application API
+
+== Links
+
+include::{snippets}/index/links.adoc[]
+
+=== Message API
+
+==== Post a new message
+
+===== Request
+HTTP method: POST
+
+Media Type: application/json;charset=UTF-8
+
+Request body:
+include::{snippets}/messages/request-fields.adoc[]
+
+Example:
+include::{snippets}/messages/request-body.adoc[]
+
+===== Response
+Media Type: application/json;charset=UTF-8
+
+Response body:
+include::{snippets}/messages/response-body.adoc[]
+
+=== User followers API
+
+==== Subscribe user as a follower of another user
+
+===== Request
+HTTP method: POST
+
+Media Type: application/json;charset=UTF-8
+
+Path parameters:
+include::{snippets}/users/\{userId}/followers/path-parameters.adoc[]
+
+Request body:
+include::{snippets}/users/\{userId}/followers/request-fields.adoc[]
+
+Example:
+include::{snippets}/users/\{userId}/followers/request-body.adoc[]
+
+===== Response
+Media Type: application/json;charset=UTF-8
+
+Response body:
+include::{snippets}/users/\{userId}/followers/response-body.adoc[]
+
+=== User timeline API
+
+==== Get user's timeline
+
+===== Request
+HTTP method: GET
+
+Path parameters:
+include::{snippets}/users/\{userId}/timeline/path-parameters.adoc[]
+
+===== Response
+Media Type: application/json;charset=UTF-8
+
+Response body:
+include::{snippets}/users/\{userId}/timeline/response-fields.adoc[]
+
+Example:
+include::{snippets}/users/\{userId}/timeline/response-body.adoc[]
+
+=== User wall API
+
+==== Get user's wall
+
+====== Request
+HTTP method: GET
+
+Path parameters:
+include::{snippets}/users/\{userId}/wall/path-parameters.adoc[]
+
+====== Response
+Media Type: application/json;charset=UTF-8
+
+Response body:
+include::{snippets}/users/\{userId}/wall/response-fields.adoc[]
+
+Example:
+include::{snippets}/users/\{userId}/wall/response-body.adoc[]
+
